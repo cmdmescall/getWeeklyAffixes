@@ -20,7 +20,8 @@ You can then schedule it through your Amazon account:
 - Go to your [Amazon Cloudwatch Dashboard](https://console.aws.amazon.com/cloudwatch/home)
 - Under **Events** on the left click **Rules**
 - Change the radio button from **Event Pattern** to **Schedule** and pick your schedule
-    - I would recommend using the *cron* functionality with the param - **0 8 ? * WED \*** - to give the api time after server restart to update
+    - I would recommend using the *cron* functionality with the param - **0 7 ? * WED \*** - to give the api time after server restart to update
+    - Please remember that cron uses GMT
 - Click **Add Target** and select **Lambda Function** from the dropdown
 - Select your function, hit **Configure Details** and give your rule a name and description
 - Hit **Create Rule** and you're good to go
